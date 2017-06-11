@@ -40,9 +40,17 @@ def main():
 	for p in p_tags:
 		content += bleach.clean(p, tags=['a', 'img'], strip=True)
 
-	title = title.text
-	subtitle = subtitle.text
-	author = author.text or 'none'
+	title = title.text or 'none'
+
+	try:
+		subtitle = subtitle.text or 'none'
+	except AttributeError:
+		subtitle = ''
+
+	try:
+		author = author.text or 'none'
+	except AttributeError:
+		author = ''
 
 	db.execute("INSERT INTO `medium_posts` (title,subtitle,author,post) VALUES (?, ?, ?, ? )",
 		(title, subtitle, author, content))
