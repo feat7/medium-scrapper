@@ -12,3 +12,7 @@ python3 setup.py install
 medium
 ```
 and then simply add url of medium post.
+
+# Screenshots
+![screenshot database](https://raw.githubusercontent.com/feat7/medium-scrapper/master/screen.png)
+
