@@ -9,6 +9,8 @@ It uses ```selenium``` so install ```chromedriver``` before use.
 git clone https://github.com/feat7/medium-scrapper.git
 cd medium-scrapper
 python3 setup.py install
+or
+python setup.py install (Note: use python 3 to install and run. python 2 incompatible)
 medium
 ```
 and then simply add url of medium post.
