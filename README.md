@@ -1,4 +1,4 @@
-# medium-scrapper
+# Medium posts scrapper (medium-scrapper)
 Save medium posts right into database.
 # Requirements
 It uses ```selenium``` so install ```chromedriver``` before use.
